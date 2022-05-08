@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import { Flex, Box, Text, Icon } from "@chakra-ui/react";
+import { Flex, Box, Text, Icon, useColorModeValue } from "@chakra-ui/react";
 import { BsFilter } from "react-icons/bs";
 
 import Property from "../components/Property";
@@ -12,13 +12,13 @@ import noresult from "../public/noresult.svg";
 const Search = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState(false);
   const router = useRouter();
-  console.log(properties);
+  const bgColor = useColorModeValue("gray.100", "gray.700");
   return (
     <Box>
       <Flex
         onClick={() => setSearchFilters(!searchFilters)}
         cursor="pointer"
-        bg="gray.100"
+        bg={bgColor}
         borderBottom="1px"
         borderColor="gray.200"
         p="2"

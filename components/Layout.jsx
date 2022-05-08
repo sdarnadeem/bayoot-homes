@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Real Estate</title>
+        <title>Bayoot</title>
       </Head>
       <Box maxWidth="1280px" m="auto">
         <header>

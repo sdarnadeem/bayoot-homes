@@ -1,0 +1,30 @@
+.menu {
+  display: none;
+}
+
+.nav a {
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: flex;
+  }
+  .nav a {
+    display: none;
+  }
+}
+
+.nav a:hover {
+  color: blue !important;
+  transform: scale(0.95);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo svg {
+  margin-right: 5px;
+}

@@ -1,16 +1,17 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 const Footer = () => {
+  const textColor = useColorModeValue("gray.700", "gray.200");
   return (
     <Box
       textAlign="center"
       p="5"
-      color="gray.600"
+      color={textColor}
       borderTop="1px"
       borderColor="gray.100"
     >
-      2022 Reeltor, Inc
+      2022 Beind Homes, Inc
     </Box>
   );
 };

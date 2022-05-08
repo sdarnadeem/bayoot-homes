@@ -1,0 +1,8 @@
+.theme {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
